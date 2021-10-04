@@ -1,0 +1,15 @@
+Clase que mantiene una correspondencia entre las etiquetas simbólicas y las direcciones numéricas.
+
+Iniciamos un mapa no ordenado donde están los símbolos predefinidos
+
+
+metodo addEntry : Añade una nueva entrada a la tabla o actualiza si ya existe
+    parametros(
+      symbol tipo string, llave del mapa
+      address tipo int, valor de la llave
+    ): Inserta or asigna un valor al mapa
+
+Metodo contains
+//Verificar si el símbolo provisto existe en la tabla de simbolos
+Metodo GetAdress
+//Devuelve la dirección 

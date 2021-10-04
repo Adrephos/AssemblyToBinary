@@ -1,0 +1,31 @@
+Método dest(string& mnemonic);   // Recibe el mnemonic de donde se almacena el dato
+
+// inicializamos un mapa no ordenado con los mnemonics válidos para Dest como llaves del mapa con sus valores binarios en bitsets de longitud 3
+
+unordered_map<string, bitset<3>> destMnemonicList;
+
+retorna el valor asignado al mnemonic en el mapa, en caso de no existir lanzará una excepción "out_of_range"
+
+FIN dest(;)
+
+
+Método comp(string& mnemonic);   // Recibe el mnemonic de donde se almacena el dato
+
+// Inicializamos un mapa no ordenado con los mnemonics válidos para Comp como llaves del mapa con sus valores binarios en bitsets de longitud 7
+
+unordered_map<string, bitset<7>> compMnemonicList;
+
+retorna el valor asignado al mnemonic en el mapa, en caso de no existir lanzará una excepción "out_of_range"
+
+FIN comp();
+
+
+Método jump(string& mnemonic) // Recibe el mnemonic de donde se almacena el dato
+
+// inicializamos un mapa no ordenado con los mnemonics válidos para Jump como llaves del mapa con sus valores binarios en bitsets de longitud 3
+
+unordered_map<string, bitset<3>> jumpMnemonicList;
+
+retorna el valor asignado al mnemonic en el mapa, en caso de no existir lanzará una excepción "out_of_range"
+
+FIN jump();

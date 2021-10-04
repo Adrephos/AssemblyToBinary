@@ -1,0 +1,21 @@
+Encapsula el acceso del codigo input. Lee un comando de programa en el lenguaje ensamblador,lo analiza, proporciona un acceso conveniente a los componentes de los comandos (campos y simbolos). En adición, remueve todo el espacio blanco y comentarios
+
+Constructor vacio
+
+bool Parser::hasMoreCommands()// verifica si tiene mas comandos en el input
+Devuelve si es verdadero o falso
+
+void Parser::advance()// lee el siguiente comando desde el input. Deberá llamarlo solamente en hasMoreCommands() si es verdadero pero inicialmente no hay un comando actual
+
+string Parser::commandType()// retorna algún tipo del comando actual
+·         A_COMMAND para @Xxx donde Xxx puede ser un símbolo o un numero decimal
+·         C_COMMAND para dest=comp;jump
+·         L_COMMAND para (Xxx) donde Xxx es un símbolo
+
+void Parser::symbol()// retorna el simbolo o el numero decimal en el comando actual y se debería llamar solamente cuando commandType() es A_COMMAND O L_COMMAND
+
+void Parser::dest()// retorna dest mnemonic en el C_COMMAND actual (8 posibilidades). Se debería llamar solo cuando commandType() es C_COMMAND
+
+void Parser::comp()// retorna comp mnemonic en el C_COMMAND actual (28 posibilidades). Se debería llamar solo cuando commandType() es C_COMMAND
+
+void Parser::jump()// retorna jump mnemonic en el C_COMMAND actual (8 posibilidades). Se debería llamar solo cuando commandType() es C_COMMAND
